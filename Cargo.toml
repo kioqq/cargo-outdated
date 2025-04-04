@@ -26,19 +26,19 @@ rust-version = "1.83.0" # MSRV
 name = "cargo-outdated"
 
 [dependencies]
-anyhow = "1.0"
-cargo = "0.86.0"
-env_logger = "0.11.5"
-git2-curl = "0.20.0"
-semver = "1.0.0"
-serde = {version="1.0.114", features = ["derive"]}
-serde_json = "1.0.56"
-tabwriter = "1.2.1"
-tempfile = "3.6"
-toml = "0.8.6"
+anyhow = "1.0.97"
+cargo = "0.87.0"
+env_logger = "0.11.8"
+git2-curl = "0.21.0"
+semver = "1.0.26"
+serde = { version="1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tabwriter = "1.4.1"
+tempfile = "3.19.1"
+toml = "0.8.20"
 clap = { version = "4.1.4", features = ["derive"] }
-strum = { version = "0.26.3", features = ["derive"] }
-rustc-hash = "2.0"
+strum = { version = "0.27.1", features = ["derive"] }
+rustc-hash = "2.1.1"
 
 [features]
 debug = []
@@ -49,4 +49,4 @@ default = []
 lto = true
 
 [dev-dependencies]
-pretty_assertions = "1.2.0"
+pretty_assertions = "1.4.1"

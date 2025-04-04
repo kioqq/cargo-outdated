@@ -77,7 +77,8 @@ impl<'ela> ElaborateWorkspace<'ela> {
             .iter()
             .map(|feature| FeatureValue::new(InternedString::from(feature)))
             .collect();
-        let specs = Packages::All.to_package_id_specs(workspace)?;
+
+        let specs = Packages::All(vec!["*".to_string()]).to_package_id_specs(workspace)?;
 
         let cli_features = CliFeatures {
             features: Rc::new(flag_features),
